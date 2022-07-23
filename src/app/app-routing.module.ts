@@ -12,9 +12,8 @@ const routes: Routes = [
    children:[
     {path:'registration',component:RegistrationComponent},
     {path: 'login',component:LoginComponent}
-
     ]},
-  {path:'home',component:HomeComponent,canActivate:[AuthGuard]}
+  {path:'home',component:HomeComponent,canActivate:[AuthGuard]}//for authorizing user entry on home page, visiters cannot enter without it(token)
   ];
 
 @NgModule({
