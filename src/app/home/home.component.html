@@ -1,0 +1,12 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="navbar-brand text-white" style="margin-left: 15px;">Home</div>
+    <button class="btn btn-danger my-2 my-2 my-sm-0" style="margin-right: 15px;" (click)="onLogout()">Logout</button>
+  </nav>
+
+<div class="card m-5" style="width:18rem">
+    <ul class="list-group">
+        <li class="list-group-item"><strong>Username : </strong>{{userDetails.userName}}</li>
+        <li class="list-group-item"><strong>FullName : </strong>{{userDetails.fullName}}</li>
+        <li class="list-group-item"><strong>Email : </strong>{{userDetails.email}}</li>
+    </ul>
+</div>
